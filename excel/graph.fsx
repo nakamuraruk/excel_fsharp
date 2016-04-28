@@ -6,7 +6,7 @@ open System.Reflection
 open Microsoft.Office.Interop.Excel
 
 let wbs :Workbooks = ApplicationClass(Visible=true).Workbooks
-let wb: Workbook = wbs.Open("C:/Users/nakamuraruk/work/memo/trip/motas5/it/performance_measure/local/performance_mod.xlsx")
+let wb: Workbook = wbs.Open("foobar.xlsx")
 let sheet : Worksheet = wb.Worksheets.["summary"]  :?> Worksheet
 
 let charts : ChartObjects = sheet.ChartObjects() :?> ChartObjects
